@@ -157,7 +157,7 @@ def main():
     plt.tick_params(axis='both', which='both',direction='in',right=True,top=True)
     plt.savefig('natalkick_plot_'+input_params.name+'.png',bbox_inches='tight')
 
-    print('System natal kick (km/s):', np.quantile(kicks,0.5),'(-',np.quantile(kicks,0.5)-np.quantile(kicks,0.159),'/+',np.quantile(kicks,0.841)-np.quantile(kicks,0.5),')')
+    print('System natal kick (km/s):', np.percentile(kicks,50),'(-',np.percentile(kicks,50)-np.percentile(kicks,15.9),'/+',np.percentile(kicks,84.1)-np.percentile(kicks,50),')')
     print('Reported values are Median +/- 1sigma uncertainties.')
     print('The final MC results are saved in natalkick_dist_'+input_params.name+'.csv')
     print('The distribution is plotted in natalkick_plot_'+input_params.name+'.png')
