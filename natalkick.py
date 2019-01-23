@@ -121,7 +121,6 @@ def MC_pec_v(RA, RA_err,
 
 def main():
     input_params = parser()
-    print(input_params)
 
     if input_params.niter is None:
         input_params.niter = 5000
