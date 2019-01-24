@@ -8,7 +8,7 @@ from joblib import Parallel, delayed
 
 def parser():
     parser = argparse.ArgumentParser(description="Script to estimate Natal kick for a system based on location,\
-     proper motion, radial velocity and distance with their uncertainties. This code repots system's potential\
+     proper motion, radial velocity and distance with their uncertainties. This code reports system's potential\
      natal kick based on MC simulations. The probability distribution of all input parameters are assumed to be\
      gaussian at the moment. This code also produces a csv file containing all the realizations from the MC\
      for the natal kick and a png file containing a histogram of this posterior distribution.\n For details of\
